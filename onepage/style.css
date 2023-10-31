@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*fontes:
+    titulo: quicksand
+    textos: josefin sans
+
+cores:
+    #173261
+    #a9a9a9
+    #343538
+    #fff
+    */
+/*SMARTPHONE PORTRAIT */
+
+/*SMARTPHONE LANDSCAPE */
+@media (min-width: 576px) {
+    body {
+        background-color: #a52a2a;
+    }
+}
+
+/*TABLET PORTRAIT */
+@media (min-width: 768px) {
+    body {
+        background-color: #d111a8;
+    }
+}
+
+/*TABLET LANDSCAPE */
+@media (min-width: 992px) {
+body{
+    background-color: #2a2ca5;
+}
+}
+/*PC*/
+@media (min-width: 1200px) {
+    body{
+        background-color: #3fa52a;
+    }
+}
