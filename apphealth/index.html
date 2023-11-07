@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App - Health</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <h1>App - Health</h1>
+        <form name="frmIMC">
+            <input type="nunber" name="txtPeso" placeholder="peso" class="caixa">
+            <input type="number" name="txtAltura" placeholder="altura" class="caixa">
+            <input type="number" name="txtIdade" placeholder="idade" class="caixa">
+            <p>
+                sexo:
+                <input type="radio" name="grupo" id="m">Masculino
+                <input type="radio" name="grupo" id="f">Feminino
+            </p>
+            <p>
+                <select name="nivel" id="atividade">
+                    <option value="" selected>Selecione o nível de atividade física</option>
+                    <option value="1.2">Sedentario (trabalho de escritorio)</option>
+                    <option value="1.375">Exercício leve (1-2 dias / semana)</option>
+                    <option value="1.55">Exercício moderado (3 -5 dias / semana)</option>
+                    <option value="1.725">Exercício pesado (6 - 7 dias / semana)</option>
+                    <option value="1.9">Atleta (2x dias     )</option>
+                </select>
+            </p>
+            <br>
+            <p>
+                <input type="button" name="" value="Calcular" onclick="calcular()">
+                <input type="reset" name="" value="Limpar" onclick="limpar()" class="limpar">
+            </p>
+        </form>
+        <img src="icons/reset.png" alt="Marcador IMC" id="grafico">
+        <h3 id="imc"></h3>
+        <h4 id="status"></h4>
+        <img src="icons/heart2.png" alt="coracao">
+        <h3 id="freq"></h3>
+        <hr>
+        <h3>calorias por dia:</h3>
+        <h4 id="calorias"></h4>
+    </div>
+    <script src="health.js"></script>
+</body>
+    
+</html>
